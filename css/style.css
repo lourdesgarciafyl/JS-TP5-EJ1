@@ -1,0 +1,16 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    flex-grow: 1;
+}
+h1{
+    color: coral;
+    font-size: xx-large;
+    font-weight: 400;
+}
+p{
+    font-size: large;
+}
