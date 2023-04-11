@@ -1,5 +1,6 @@
 let btnComenzar = document.getElementById(`btnComenzar`)
 let adivinador = document.querySelector(`form`)
+let divParaAlert = document.getElementById(`divParaAlert`)
 btnComenzar.addEventListener(`click`, comenzarJuego);
 
 
@@ -21,21 +22,35 @@ function comenzarJuego(){
             console.log(input);
             if(input >= 1 && input <= 10){
                 if(input == numAleatorio){
-                    alert(`Ganaste!`)
+                    let mensajeAlerta = document.createElement(`div`)
+                    mensajeAlerta.innerHTML = `Ganaste!`
+                    divParaAlert.appendChild(mensajeAlerta)
                     adivinador.reset();
                     btnComenzar.innerHTML = `Comenzar a jugar!`;
                     btnComenzar.className = `btn btn-primary`;
                 } else{
                     if(input < numAleatorio){
-                        alert(`PISTA: el número mágico es más alto!`)
+                        let mensajeAlerta = document.createElement(`div`)
+                        mensajeAlerta.innerHTML = `PISTA: el número mágico es más alto que ${input}!`
+                        mensajeAlerta.className= `mb-2`
+                        divParaAlert.appendChild(mensajeAlerta)
                         adivinador.reset();
                     } else if(input > numAleatorio){
-                        alert(`PISTA: el número mágico es más bajo!`)
+                        let mensajeAlerta = document.createElement(`div`)
+                        mensajeAlerta.innerHTML=`PISTA: el número mágico es más bajo que ${input}!`
+                        mensajeAlerta.className= `mb-2`
+                        divParaAlert.appendChild(mensajeAlerta)
                         adivinador.reset();
                     }
                 }
             } else{
-                alert(`Ingresa un numero entre el 1 y el 10, no mayor.`)
+                let mensajeAlerta = document.createElement(`div`)
+                mensajeAlerta.innerHTML=`Recordá que tenes que elegir un numero entre el 1 y el 10.`
+                mensajeAlerta.className= `mb-2`
+                divParaAlert.appendChild(mensajeAlerta)
+                adivinador.reset();
+                btnComenzar.innerHTML = `Comenzar a jugar!`;
+                btnComenzar.className = `btn btn-primary`;
             }
         }
 

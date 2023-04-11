@@ -14,3 +14,7 @@ h1{
 p{
     font-size: large;
 }
+#divParaAlert{
+    background-color: bisque;
+    color: salmon;
+}
