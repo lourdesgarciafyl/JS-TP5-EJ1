@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@400;700&family=Inconsolata&family=Orbitron&display=swap');
+
 body{
     min-height: 100vh;
     display: flex;
@@ -5,16 +7,35 @@ body{
 }
 main{
     flex-grow: 1;
+    background: #EECDA3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #EF629F, #EECDA3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #EF629F, #EECDA3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 h1{
-    color: coral;
-    font-size: xx-large;
+    color: white;
+    font-size: 50px;
     font-weight: 400;
+    font-family: 'Inconsolata', monospace;
 }
 p{
     font-size: large;
+    font-family: 'Inconsolata', monospace;
 }
+/*
+.btnRosa{
+    background-color:     #b54c7a;
+    color: white;
+    font-family: 'Inconsolata', monospace;
+}
+.btnRosa:hover{
+    background-color: #eecda3;
+}
+*/
 #divParaAlert{
-    background-color: bisque;
-    color: salmon;
+    background-color:     #eecda3;
+    color:     #ef629f;
+}
+footer{
+    background-color: black;
 }
