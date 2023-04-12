@@ -21,32 +21,35 @@
         <section class="container my-4">
             <h1 class="text-center text-light">¡Numeros mágicos!</h1>
             <hr class="text-light">
-            <p class="text-center text-light">Elegí un número entre el 1 y el 10</p>
+            <p class="text-center text-light">Elegí un número entre el 1 y el 100</p>
         </section>   
 
         <section class="container text-center" id="contenedorJuego"> 
         <button 
-        class="btn btn-primary" 
+        class="btn btnRosa" 
         type="button" 
         id="btnComenzar"
         onclick="comenzarJuego()">
         Comenzar a jugar!
         </button>
-        <form class="rounded-4 my-3 d-flex">
+        <form 
+        class="rounded-4 my-3 d-flex" 
+        id="formJuego"  
+        onsubmit="adivinandoNumero(event)">
                 <input
                 class="form-control me-2"
                 type="number"
-                placeholder="Ingresa un nummero entre el 1 y el 10"
-                required
+                placeholder="Ingresa un nummero entre el 1 y el 100"
               />
               <button 
-              class="btn btn-outline-success" 
-              type="submit">
+              class="btn btnEnviar" 
+              type="submit"
+            >
                   Enviar!
                 </button>
               </form>
-              <div class="alert alert-dark d-none" role="alert" id="divParaAlert">
-
+              <div class="alert alertRosa d-none" role="alert" id="divParaAlert">
+                ¡Adivinaste el número!
               </div>
         </section>
     </main>

@@ -22,7 +22,17 @@ p{
     font-size: large;
     font-family: 'Inconsolata', monospace;
 }
-/*
+.btnEnviar{
+    background-color: aquamarine;
+    color: black;
+    font-weight: 300;
+    font-family: 'Inconsolata', monospace;
+}
+
+.btnEnviar:hover{
+    background-color: rgb(55, 174, 135);
+}
+
 .btnRosa{
     background-color:     #b54c7a;
     color: white;
@@ -31,10 +41,20 @@ p{
 .btnRosa:hover{
     background-color: #eecda3;
 }
-*/
-#divParaAlert{
-    background-color:     #eecda3;
+.btnRosaDisabled{
+    background-color: white;
+    color: #EF629F;
+    font-family:  'Inconsolata', monospace;
+}
+
+.alertSeguiParticipando{
+    background-color: black;
     color:     #ef629f;
+}
+.alertRosa{
+    background-color: #ef629f;
+    color: black;
+    font-size: 20px;
 }
 footer{
     background-color: black;
